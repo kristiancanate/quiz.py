@@ -1,1 +1,2 @@
 # quiz.py
+This program will ask the user 10 questions with 4 possible answer choices in a quiz format. At the end of the quiz, the user will be told their score based on their answers along with a humorous comment about their score.
