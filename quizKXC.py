@@ -1,8 +1,28 @@
+def run_quest (quest,check,ansU,ansR):
+    print (quest)
+    while check == False:
+        try:
+            ansU = int (input ("Your answer: "))
+            print ("")
+            if ansU == ansR:
+                #score += 1
+                check = True
+            elif 0 < ansU < 5:
+                check = True
+            else:
+                print ("""That was not one of the options. Please input a positive
+integer from 1 to 4.
+""")
+            except ValueError:
+                print ("""
+That's not even an integer!
+""")
+
 q1A = False
 q2A = False
 q1U = int (0)
 q2U = int (0)
-score = int (0)
+#score = int (0)
 
 print ("""Hello, and welcome to my one question quiz.
 In this program, you will be asked one question and given four options
@@ -21,7 +41,7 @@ while q1A == False:
         q1U = int (input ("Your answer: "))
         print ("")
         if q1U == 2:
-            score += 1
+            #score += 1
             q1A = True
         elif 0 < q1U < 5:
             q1A = True
@@ -44,7 +64,7 @@ while q2A == False:
         q2U = int (input ("Your answer: "))
         print ("")
         if q2U == 4:
-            score += 1
+            #score += 1
             q2A = True
         elif 0 < q2U < 5:
             q2A = True
@@ -57,4 +77,4 @@ integer from 1 to 4.
 That's not even an integer!
 """)
 
-print ("You got", score*50, "% out of 100%.")
+#print ("You got", score*50, "% out of 100%.")
