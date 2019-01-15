@@ -11,13 +11,13 @@ To answer, you will enter the number associated to the option.
 When you are ready to answer the question, hit enter.""")
 input ("")
 
-while q1A == False:
-    try:
-        print ("""Which of the following is my favorite color?
+print ("""Which of the following is my favorite color?
 1) Blue
 2) Red
 3) Green
 4) Yellow""")
+while q1A == False:
+    try:
         q1U = int (input ("Your answer: "))
         print ("")
         if q1U == 2:
@@ -34,13 +34,13 @@ integer from 1 to 4.
 That's not even an integer!
 """)
 
-while q2A == False:
-    try:
-        print ("""Which one of these pets have I previously owned?
+print ("""Which one of these pets have I previously owned?
 1) Spider
 2) Dog
 3) Snake
 4) Lizard""")
+while q2A == False:
+    try:
         q2U = int (input ("Your answer: "))
         print ("")
         if q2U == 4:
