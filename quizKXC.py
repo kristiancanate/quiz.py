@@ -1,5 +1,7 @@
 q1A = False
+q2A = False
 q1U = int (0)
+q2U = int (0)
 score = int (0)
 
 print ("""Hello, and welcome to my one question quiz.
@@ -32,4 +34,27 @@ integer from 1 to 4.
 That's not even an integer!
 """)
 
-print ("You got", score*100, "% out of 100%.")
+while q2A == False:
+    try:
+        print ("""Which one of these pets have I previously owned?
+1) Spider
+2) Dog
+3) Snake
+4) Lizard""")
+        q2U = int (input ("Your answer: "))
+        print ("")
+        if q2U == 4:
+            score += 1
+            q2A = True
+        elif 0 < q2U < 5:
+            q2A = True
+        else:
+            print ("""That was not one of the options. Please input a positive
+integer from 1 to 4.
+""")
+    except ValueError:
+        print ("""
+That's not even an integer!
+""")
+
+print ("You got", score*50, "% out of 100%.")
