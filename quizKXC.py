@@ -1,4 +1,5 @@
-#score = int (0)
+score = int (0)
+
 def run_quest (quest,check,ansU,ansR):
     print (quest)
     while check == False:
@@ -6,7 +7,8 @@ def run_quest (quest,check,ansU,ansR):
             ansU = int (input ("Your answer: "))
             print ("")
             if ansU == ansR:
-                #score += 1
+                global score
+                score += 1
                 check = True
             elif 0 < ansU < 5:
                 check = True
@@ -47,4 +49,4 @@ input ("")
 run_quest (q1T,q1C,q1U,q1R)
 run_quest (q2T,q2C,q2U,q2R)
 
-#print ("You got", score*50, "% out of 100%.")
+print ("You got", score*50, "% out of 100%.")
