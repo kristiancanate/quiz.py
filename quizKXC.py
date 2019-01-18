@@ -130,3 +130,11 @@ run_quest (q9T,q9C,q9U,q9R)
 run_quest (q10T,q10C,q10U,q10R)
 
 print ("You got", score*10, "% out of 100%.")
+
+if -1 < score < 5:
+    print ("Who are you and why are you taking this quiz?")
+elif 4 < score < 8:
+    print ("""Alright cool, so you know about me.
+You must either be my friend or really observant.""")
+elif 7 < score < 11:
+    print ("You know a little bit too much about me...")
